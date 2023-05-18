@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
     font-family: 'Kanit', sans-serif;
 }
 body{
@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 .application{
@@ -23,10 +23,12 @@ body{
     align-items: center;
     text-align: center;
     border-radius: 6px;
+    gap: 2rem;
 }
 .heading{
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
+    color: antiquewhite;
 }
 .buttons{
     display: flex;
@@ -42,11 +44,27 @@ body{
     font-size: 1.5rem;
 }
 #value{
-    margin-top: 1.5rem;
-    font-size : 2.5rem;
+    color: white;
+    margin : 0;
+    font-size : 3rem;
     font-weight: 600;
 }
 .btn:hover{
     color: white;
     background-color: #80ff00;
+}
+@media (max-width : 550px){
+    /* body{
+        background: none;
+    } */
+    .application{ 
+        background : linear-gradient(to left bottom, #ffdd3b, #ffa043, #ff5a7d, #ff37c4, #8d5cff);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        }
+        .buttons{
+            flex-direction: column;
+        }
 }
